@@ -2,6 +2,8 @@
 
 This project is a Travel Blog application built with React, focusing on sharing travel experiences in Egypt.
 
+## Preject Web Address
+Open [https://depi-travel-blog.vercel.app/](https://depi-travel-blog.vercel.app/) to view it in your browser.
 ## Project Structure
 
 The project follows a standard React application structure with additional folders for components, styles, and data management.
