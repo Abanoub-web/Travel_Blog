@@ -1,0 +1,178 @@
+/* Colors */
+:root {
+  --primary-color: #8EACCD;
+  --secondary-color: #000000; /* Changed to black */
+  --hover-color: rgba(0, 0, 0, 0.1); /* Changed to a light black */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 12px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo a {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo a:hover {
+  color: #333; /* Darker shade for hover */
+}
+
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+/* Shared Button & Link Styles */
+.navbar-link, .dashboard-link, .login-btn {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.navbar-link:hover, .dashboard-link:hover, .login-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+}
+
+.navbar-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+/* Authentication Button Styles */
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
+  margin-right: 10px;
+}
+
+.signup-btn {
+  padding: 8px 20px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.signup-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Remove the dot (list-style) from all list items */
+.navbar-menu,
+.navbar-menu li,
+.navbar-auth,
+.navbar-auth li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .navbar-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-auth {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .signup-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

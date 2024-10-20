@@ -1,0 +1,90 @@
+.blog-post-form {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 5%;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 5% auto;
+    max-width: 90%;
+}
+
+.blog-post-form h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.blog-post-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.blog-post-form input[type="text"],
+.blog-post-form input[type="file"],
+.blog-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.blog-post-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.blog-post-form input[type="text"]:focus,
+.blog-post-form input[type="file"]:focus,
+.blog-post-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.blog-post-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.blog-post-form button:hover {
+    background-color: #0056b3;
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.image-preview img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .blog-post-form {
+        padding: 20px;
+    }
+    
+    .image-preview img {
+        max-width: 80px;
+    }
+}

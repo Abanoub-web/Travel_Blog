@@ -1,0 +1,120 @@
+{
+  "Posts": [
+    {
+      "id": "1a1a",
+      "title": "Exploring the Bahamas",
+      "content": "<p>My adventures in the Bahamas...</p>",
+      "date": "2022-07-15",
+      "author": {
+        "uId": "2a9k",
+        "Uname": "John Doe"
+      },
+      "tags": [
+        "travel",
+        "adventure",
+        "beach"
+      ],
+      "comments": [
+        {
+          "userid": "2a8k",
+          "comName": "",
+          "comment": "marvelous post!",
+          "date": "2022-07-15"
+        },
+        {
+          "userid": "2a7k",
+          "comName": "",
+          "comment": "Great post!",
+          "date": "2022-07-15"
+        }
+      ],
+      "images": [
+        "./img/bahama_1.jpg",
+        "./img/bahama_2.jpg",
+        "./img/bahama_3.jpg"
+      ]
+    },
+    {
+      "id": "1a1b",
+      "title": "Traveling through Europe",
+      "content": "<p>After 40,000 years, Europe’s story is still being written. Whether you’re pouring the perfect pint of Guinness, biking along the Dutch countryside, or just breathing in the air atop the Swiss Alps, this trip is full of opportunity. So, what will your story say? Disclaimer for Rome in 2025: Please be aware that due to the Jubilee and associated events taking place in Rome, there may be changes to our scheduled activities. This could include modifications to timings, relocation, or cancellations.</p><p>What you'll get</p>",
+      "date": "2022-07-15",
+      "author": {
+        "uId": "2a8k",
+        "Uname": "John Doe"
+      },
+      "tags": [
+        "travel",
+        "adventure",
+        "beach"
+      ],
+      "comments": [
+        {
+          "userid": "2a9k",
+          "comName": "",
+          "comment": "Great post!",
+          "date": "2022-07-15"
+        },
+        {
+          "userid": "2a7k",
+          "comName": "",
+          "comment": "wonderful post!",
+          "date": "2022-07-15"
+        }
+      ],
+      "images": [
+        "./img/europe_1.jpg?text=Europe+Image+1",
+        "./img/europe_2.jpg?text=Europe+Image+2",
+        "./img/europe_3.jpg?text=Europe+Image+3",
+        "./img/europe_4.jpg?text=Europe+Image+4",
+        "./img/europe_5.jpg?text=Europe+Image+5"
+      ]
+    },
+    {
+      "id": "1726565196580",
+      "title": "new title",
+      "content": "<p>this is the content</p>",
+      "date": "2024-09-17",
+      "author": {
+        "Uname": "Anonymous"
+      },
+      "tags": [],
+      "comments": [
+        {
+          "userid": "2a9k",
+          "comName": "",
+          "comment": "Great post!",
+          "date": "2022-07-15"
+        },
+        {
+          "userid": "2a7k",
+          "comName": "",
+          "comment": "awesome post!",
+          "date": "2022-07-15"
+        }
+      ],
+      "images": [
+        "https://via.placeholder.com/800x400",
+        "https://via.placeholder.com/800x400"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "2a9k",
+      "username": "user1",
+      "password": "pass1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "img": "https://via.placeholder.com/150?text=User+Image+1"
+    },
+    {
+      "id": "2a7k",
+      "username": "jane_doe",
+      "password": "hashed_password_2",
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "img": "https://via.placeholder.com/150?text=User+Image+2"
+    }
+  ]
+}

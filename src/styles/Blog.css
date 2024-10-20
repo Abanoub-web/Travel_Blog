@@ -1,0 +1,121 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Blog Container */
+.blog-container {
+  max-width: 90%;
+  width: 800px;
+  margin: 20px auto;
+  background-color: #d2e0fb86;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: #8EACCD;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Blog Image */
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Blog Meta: Username and Date */
+.blog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.blog-username {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: bold;
+  color: #8EACCD;
+}
+
+.blog-date {
+  font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+  color: #666;
+}
+
+/* Blog Content */
+.blog-content {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Blog Tags */
+.blog-tags {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-tag {
+  display: inline-block;
+  background-color: #D2E0FB;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Blog Comments */
+.blog-comments {
+  margin-top: 30px;
+  background-color: #FEF9D9;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.blog-comments h3 {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  color: #8EACCD;
+  margin-bottom: 15px;
+}
+
+.blog-comment {
+  background-color: #D2E0FB;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .blog-container {
+    padding: 15px;
+  }
+  
+  .blog-meta {
+    flex-direction: column;
+  }
+  
+  .blog-username, .blog-date {
+    margin-bottom: 5px;
+  }
+}
+
+.blog-post {
+  margin-bottom: 40px; /* Adjust this value as needed */
+border: 2px solid white;
+  padding: 40px; /* Adjust this value as needed */
+  border-radius: 5px;
+}
